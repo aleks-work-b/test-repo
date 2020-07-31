@@ -1,0 +1,16 @@
+<resources>
+  <string name="app_name">Test project</string>
+
+  <!--LOGIN AUTH-->
+  <string name="loginAuthActionLogin">Login with Github</string>
+  <!--LOGIN AUTH-->
+
+  <!--MAIN SEARCH-->
+  <string name="mainSearchHint">Search</string>
+  <string name="mainSearchActionHistory">History</string>
+  <!--MAIN SEARCH-->
+
+  <!--MAIN HISTORY-->
+  <string name="mainHistoryActionBack">Back</string>
+  <!--MAIN HISTORY-->
+</resources>

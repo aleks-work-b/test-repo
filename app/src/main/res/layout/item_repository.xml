@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/itemRepositoryRootView"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="2dp"
+  android:background="@color/white"
+  android:orientation="vertical"
+  android:paddingLeft="16dp"
+  android:paddingTop="8dp"
+  android:paddingRight="16dp"
+  android:paddingBottom="8dp"
+  tools:ignore="RtlHardcoded"
+  >
+
+  <TextView
+    android:id="@+id/itemRepositoryNameTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    tools:text="Repository Name"
+    />
+
+  <TextView
+    android:id="@+id/itemRepositoryDescriptionTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    tools:text="Repository Name"
+    />
+
+  <TextView
+    android:id="@+id/itemRepositoryStarsTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    tools:text="Repository Name"
+    />
+
+  <TextView
+    android:id="@+id/itemRepositoryUrlTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    tools:text="Repository Name"
+    />
+
+</LinearLayout>

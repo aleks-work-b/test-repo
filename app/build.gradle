@@ -1,0 +1,74 @@
+plugins {
+  id 'com.android.application'
+  id 'kotlin-android'
+  id 'kotlin-kapt'
+  id 'kotlin-android-extensions'
+}
+
+android {
+  compileSdkVersion 29
+
+  defaultConfig {
+    applicationId "com.test.project"
+    minSdkVersion 21
+    targetSdkVersion 29
+    versionCode 1
+    versionName "1.0"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+}
+
+dependencies {
+  implementation androidx.ktx_core
+  implementation androidx.ktx_fragment
+  implementation androidx.appcompat
+  implementation androidx.material
+  implementation androidx.constraintlayout
+  implementation androidx.vm_savedstate
+  implementation androidx.multidex
+
+  implementation daggerDependencies.dagger
+  implementation daggerDependencies.daggerAndroid
+  implementation daggerDependencies.daggerAndroidSupport
+  kapt daggerDependencies.daggerAnnotationProcessor
+  kapt daggerDependencies.daggerAndroidAnnotationProcessor
+
+  compileOnly squareup.assisted_inject
+  kapt squareup.assisted_inject_ap
+
+  implementation rxjava2Dependencies.rxandroid
+  implementation rxjava2Dependencies.rxjava
+
+  implementation fastadapter.library
+  implementation fastadapter.diff
+  implementation fastadapter.scroll
+
+  implementation retrofit2.retrofit
+  implementation retrofit2.adapterRxjava2
+  implementation retrofit2.converterGson
+  implementation retrofit2.loggingInterceptor
+  implementation gson.library
+  implementation okhttp3.library
+
+  implementation spinKit.library
+
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5'
+
+  implementation room.room
+  kapt room.eoomCompiler
+  implementation room.ktx
+  implementation room.rxjava2
+}
